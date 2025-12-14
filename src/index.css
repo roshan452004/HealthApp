@@ -1,24 +1,105 @@
-/* base */
-* { box-sizing: border-box; }
-html,body,#root { height:100%; }
-body { margin:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; background:#f6f7fb; color:#111827; }
+/* =========================
+   FONT IMPORT
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-/* nav */
-.nav { height:60px; display:flex; align-items:center; justify-content:space-between; background:#fff; padding:0 18px; border-bottom:1px solid #e6e9ef; }
-.brand { font-weight:700; color:#111827; text-decoration:none; font-size:18px; }
-.nav-right { display:flex; gap:10px; align-items:center; }
-.nav-link { text-decoration:none; color:#374151; }
-.btn-ghost { background:transparent; border:none; padding:6px 10px; border-radius:6px; cursor:pointer; }
+/* =========================
+   BASE STYLES
+========================= */
+* {
+  box-sizing: border-box;
+}
 
-/* layout */
-.app-root { min-height:100vh; display:flex; flex-direction:column; }
-.main-content { padding:18px; max-width:1100px; margin:0 auto; width:100%; }
+html,
+body,
+#root {
+  height: 100%;
+}
 
-/* card */
-.card { background:#fff; border-radius:10px; padding:16px; box-shadow:0 6px 18px rgba(16,24,40,0.04); }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f6f7fb;
+  color: #111827;
+}
 
-/* grid */
-.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; }
+/* =========================
+   NAVIGATION
+========================= */
+.nav {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 0 18px;
+  border-bottom: 1px solid #e6e9ef;
+}
+
+.brand {
+  font-weight: 700;
+  color: #111827;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #374151;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-ghost:hover {
+  background: #f3f4f6;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  padding: 18px;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* =========================
+   CARD
+========================= */
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.04);
+}
+
+/* =========================
+   GRID
+========================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+}
 
 /* stat card */
 .stat-card { padding:18px; text-align:left; }
@@ -35,6 +116,7 @@ body { margin:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Robot
 
 /* misc */
 .page-header h1 { margin:0; font-size:24px; }
+.sub { color:#205dd7; margin:6px 0 0; }
 .sub { color:#dfd4d4; margin:6px 0 0; }
 .muted { color:#6b7280; font-size:13px; }
 .error { color:#480101; background:#fee2e2; padding:8px; border-radius:6px; }
