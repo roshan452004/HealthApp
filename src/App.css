@@ -61,7 +61,7 @@ body {
 }
 
 .auth-switch a {
-  color: #2563eb;
+  color: #000c25;
   text-decoration: none;
   font-weight: 500;
 }
@@ -70,11 +70,11 @@ body {
 .dashboard {
   min-height: 100vh;
   padding: 20px;
-  background: #fff;
+  background: #f4f4f4;
 }
 
 .logout-btn {
-  background: #ef4444;
+  background: #a45454;
   color: #fff;
   padding: 8px 12px;
   border-radius: 6px;
